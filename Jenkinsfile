@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the Git repository
-                git url: 'https://github.com/chirag1207/g01461345swe645-assignment02', branch: 'main'
+               git url: 'https://github.com/chirag1207/g01461345swe645-assignment02', branch: 'main', credentialsId: 'github-credentials'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // Push the Docker image to your local Docker registry
                 script {
-                    docker.withRegistry('http://localhost:5000') {
+                    docker.withRegistry('http://localhost:5000' 'docker-registry-credentials') {
                         docker.image('g01461345-swe645-assignment-02').push('latest')
                     }
                 }
