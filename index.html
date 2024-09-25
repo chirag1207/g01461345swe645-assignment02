@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS Survey Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+<body class="container">
+
+    <!-- NAVIGATION MENU - TOP BAR -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://g01461345-swe645-assignment01.s3.amazonaws.com/index.html" style="color: whitesmoke;">Class Home Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NAVIGATION MENU END - TOP BAR -->
+
+    <div class="gmu-body">
+
+        <!-- PAGE HEADER -->
+
+        <div class="gmu-header">
+            <h1>DEPARTMENT OF COMPUTER SCIENCE</h1>
+        </div>
+        <div class="my-3">
+            <center>
+                <h2>SURVEY PAGE</h2>
+            </center>
+        </div>
+        <hr>
+
+        <!-- SURVEY FORM START -->
+
+        <div class="mt-4 px-3">
+            <form action="" method="POST">
+
+                <!-- DATE OF SURVEY -->
+
+                <div class="row my-4">
+                    <div class="col-auto">
+                        <label for="SurveyPage_DateOfSurvey" class="col-form-label">Date of Survey</label>
+                        <span style="color: red;">*</span>
+                    </div>
+                    <div class="col-auto">
+                        <input type="date" id="SurveyPage_DateOfSurvey" class="form-control">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+
+                    <!-- First Name -->
+
+                    <div class="col">
+                        <label for="SurveyPage_FirstName" class="form-label">First Name</label>
+                        <span style="color: red;">*</span>
+                        <input type="text" class="form-control" id="SurveyPage_FirstName" placeholder="First Name" required autofocus />
+                    </div>
+                    
+                    <!-- Last Name -->
+
+                    <div class="col">
+                        <label for="SurveyPage_LastName" class="form-label">Last Name</label>
+                        <span style="color: red;">*</span>
+                        <input type="text" class="form-control" id="SurveyPage_LastName" placeholder="Last Name" required />
+                    </div>
+
+                    <!-- EMAIL ADDRESS -->
+
+                    <div class="col">
+                        <label for="SurveyPage_Email" class="form-label">Email address</label>
+                        <span style="color: red;">*</span>
+                        <input type="email" class="form-control" id="SurveyPage_Email" placeholder="username@gmu.edu" required />
+                    </div>
+
+                    <!-- Telephone Number -->
+
+                    <div class="col">
+                        <label for="SurveyPage_Telephone" class="form-label">Telephone</label>
+                        <span style="color: red;">*</span>
+                        <input type="tel" class="form-control" id="SurveyPage_Telephone" placeholder="Telephone" required>
+                    </div>
+                </div>
+                <div class="row my-4">
+
+                    <!-- STREET ADDRESS -->
+
+                    <div class="col-3">
+                        <label for="SurveyPage_StreetAddress" class="form-label">Street Address</label>
+                        <span style="color: red;">*</span>
+                        <input type="text" class="form-control" id="SurveyPage_StreetAddress"
+                            placeholder="Street Address" required />
+                    </div>
+                   
+
+                    <!-- CITY -->
+
+                    <div class="col-2">
+                        <label for="SurveyPage_City" class="form-label">City</label>
+                        <span style="color: red;">*</span>
+                        <input type="text" class="form-control" id="SurveyPage_City" placeholder="City" required />
+                    </div>
+
+                    <!-- STATE -->
+
+                    <div class="col-2">
+                        <label for="SurveyPage_State" class="form-label">State</label>
+                        <span style="color: red;">*</span>
+                        <input type="text" class="form-control" id="SurveyPage_State" placeholder="State" required />
+                    </div>
+
+                    <!-- ZIP -->
+
+                    <div class="col-2">
+                        <label for="SurveyPage_Zip" class="form-label">Zip</label>
+                        <span style="color: red;">*</span>
+                        <input type="number" class="form-control" id="SurveyPage_Zip" placeholder="Zip" required />
+                    </div>
+                </div>
+                
+                <div class="row my-4">
+
+                    <!-- WHAT DID STUDENTS LIKE MOST ABOUT THE UNIVERSITY -->
+
+                    <div class="col-4">
+                        <label class="form-label">What do you like most about the
+                            campus?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Students"
+                                id="SurveyPage_checkbox_Students" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_Students">
+                                Students
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Location"
+                                id="SurveyPage_checkbox_Location" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_Location">
+                                Location
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Campus"
+                                id="SurveyPage_checkbox_Campus" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_Campus">
+                                Campus
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Atmosphere"
+                                id="SurveyPage_checkbox_Atmosphere" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_Atmosphere">
+                                Atmosphere
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Dorm Rooms"
+                                id="SurveyPage_checkbox_DormRooms" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_DormRooms">
+                                Dorm Rooms
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sports"
+                                id="SurveyPage_checkbox_Sports" />
+                            <label class="form-check-label" for="SurveyPage_checkbox_Sports">
+                                Sports
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- HOW WERE STUDENTS INTERESTED IN THE UNIVERSITY -->
+
+                    <div class="col-4">
+                        <label class="form-label">How did you hear about
+                            the university?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="HearAboutTheUniversity"
+                                id="SurveyPage_radio_Friends" value="Friends" />
+                            <label class="form-check-label" for="SurveyPage_radio_Friends">
+                                Friends
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="HearAboutTheUniversity"
+                                id="SurveyPage_radio_Television" value="Television" />
+                            <label class="form-check-label" for="SurveyPage_radio_Television">
+                                Television
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="HearAboutTheUniversity"
+                                id="SurveyPage_radio_Internet" value="Internet" />
+                            <label class="form-check-label" for="SurveyPage_radio_Internet">
+                                Internet
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="HearAboutTheUniversity"
+                                id="SurveyPage_radio_Others" value="Others" />
+                            <label class="form-check-label" for="SurveyPage_radio_Others">
+                                Others
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- HOW LIKELY WOULD STUDENTS RECOMMEND THIS UNIVERSITY TO OTHERS -->
+
+                    <div class="col-4">
+                        <label for="SurveyPage_Likeliness" class="form-label">How likely would you recommend this university to
+                            others?</label>
+                        <select class="form-select" id="SurveyPage_Likeliness">
+                            <option value="Very Likely">Very Likely</option>
+                            <option value="Likely">Likely</option>
+                            <option value="Unlikely">Unlikely</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+
+                    <!-- RAFFLE RANGING FROM 1 THROUGH 100 -->
+
+                    <div class="col-4">
+                        <label for="SurveyPage_Raffle" class="form-label">Raffle (Atleast 10 values from 1 - 100)</label>
+                        <textarea class="form-control" id="SurveyPage_Raffle"
+                            placeholder="1,2,3,4,5,6,7,8,9,10,..."></textarea>
+                    </div>
+
+                    <!-- ADDITIONAL COMMENTS -->
+
+                    <div class="col-4">
+                        <label for="SurveyPage_AdditionalComments" class="form-label">Additional Comments</label>
+                        <textarea class="form-control" id="SurveyPage_AdditionalComments"
+                            placeholder="Additional Comments.." autocomplete></textarea>
+                    </div>
+                </div>
+
+                <!-- SUBMIT AND RESET BUTTON -->
+
+                <div class="my-4">
+                    <center>
+                        <button type="reset" class="btn btn-danger mx-1">Cancel</button>
+                        <button type="submit" name="submit" value="submit" class="btn btn-success mx-1">Submit</button>
+                    </center>
+                </div>
+            </form>
+        </div>
+
+        <!-- SURVEY FORM END -->
+
+        <!-- FOOTER START -->
+
+        <footer>
+            <center>© 2024 George Mason University</center>
+        </footer>
+
+        <!-- FOOTER END -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    color: #006633;
+}
+
+.accordion-item{
+    background-color: #FFCC33;
+}
+
+tr{
+    background-color: #FFCC33;
+}
+
+.gmu-header{
+    background-color: #FFCC33;
+    border-style: solid;
+    border-color: #006633;
+    border-width: 5px;
+    box-shadow: 5px 10px  #FFCC33;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.gmu-body{
+    background-color: #006633;
+    color: #FFCC33;
+}
+
+.gmu-yellow{
+    color: #FFCC33;
+}
+
+nav {
+    background-color: #006633;   
+}
+
+.logo {
+    height: 50px;
+}
+
+li{
+    font-size: 20px;
+}
