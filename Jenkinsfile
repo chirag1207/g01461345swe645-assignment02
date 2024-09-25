@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Build the Docker image using the Dockerfile
                 script {
-                    docker.build('Dockerfile')
+                    docker.build('g01461345-swe645-assignment-02')
                 }
             }
         }
@@ -32,8 +32,8 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 // Apply Kubernetes deployment and service YAML files
-                sh 'kubectl apply -f /deployment.yaml'
-                sh 'kubectl apply -f /service.yaml'
+                sh 'kubectl apply -f k8s/deployment.yaml'
+                sh 'kubectl apply -f k8s/service.yaml'
             }
         }
     }
